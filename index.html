@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Jonah's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="#" class="logo">Jonah<span class="highlight">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#web-projects">Web Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Emmanuel Ephraim Jonah</span></h1>
+            <h2 class="hero-subtitle">Frontend Developer & UI/UX Designer</h2>
+            <p class="hero-desc">Crafting clean code and beautiful interfaces with a touch of creative design.</p>
+            <div class="hero-buttons">
+                <a href="#web-projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="glass-card about-card">
+                <div class="about-content">
+                    <p>I'm a passionate frontend developer specializing in HTML, CSS, and JavaScript, with a strong eye for UI/UX and logo design. I believe in creating digital experiences that are both functional and visually compelling.</p>
+                    <p>My background in design helps me bridge the gap between aesthetics and technology, ensuring every project is pixel-perfect and user-friendly.</p>
+                    <div class="about-links">
+                        <a href="https://github.com/Onlybossfx" target="_blank" class="headlink social-link"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/emmanuel-jonah-6504b0370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="headlink social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="headlink social-link"><i class="fas fa-file-download"></i> Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="glass-card skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, modern structure.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Responsive design, animations, Flexbox/Grid, CSS custom properties.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>DOM manipulation, ES6+, async programming, interactive features.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User research, wireframing, prototyping, design systems.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Logo Design</h3>
+                    <p>Brand identity, vector graphics, Adobe Illustrator, Figma.</p>
+                </div>
+                <div class="glass-card skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>React (Learning)</h3>
+                    <p>Currently expanding my skills into modern frontend frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Projects Slider -->
+    <section id="web-projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Web <span class="highlight">Projects</span></h2>
+            <div class="slider-container">
+                <div class="slider web-slider">
+                    <!-- Slide 1 -->
+                    <div class="slide glass-card">
+                        <div class="slide-image">
+                            <img src="logos.png" alt="AUTOCAREPLUS Project">
+                        </div>
+                        <div class="slide-content">
+                            <h3>AUTOCAREPLUS</h3>
+                            <p>My first deployed car rental and service website. Used to test deployment</p>
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="slide-links">
+                                <a href="https://autocareplus.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide glass-card">
+                        <div class="slide-image">
+                            <img src="logo2.jpg" alt="ProfileForge Project">
+                        </div>
+                        <div class="slide-content">
+                            <h3>ProfileForge</h3>
+                            <p>Real‑time resume builder website.</p>
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Formspree</span>
+                            </div>
+                            <div class="slide-links">
+                                <a href="https://profileforge.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide glass-card">
+                        <div class="slide-image">
+                            <img src="next.png" alt="Next Project">
+                        </div>
+                        <div class="slide-content">
+                            <h3>What's next?</h3>
+                            <p>It could be your own project, lets connect to bring your awesome idea to reality.</p>
+                            <div class="tech-tags">
+                                <span>???</span>
+                                <span>???</span>
+                                <span>???</span>
+                            </div>
+                            <div class="slide-links">
+                                <a href="#contact"><i class="fas fa-handshake"></i> Let's Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+    <div class="container">
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <div class="contact-wrapper">
+            <div class="glass-card contact-form-card">
+                <h3>Send a Message</h3>
+                <form id="contact-form" action="https://formspree.io/f/mykgevan" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <!-- Formspree hidden fields -->
+                    <input type="hidden" name="_subject" value="New message from your portfolio!">
+                    <input type="hidden" name="_format" value="plain">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+            
+            <div class="glass-card contact-info">
+                <h3>Contact Info</h3>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a class="more" href="mailto:emmaephraim2006@gmail.com">emmaephraim2006@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    <a class="more" href="tel:+2349061743543">+234 906 174 3543</a>
+                </p>
+                <div class="social-icons">
+                    <a href="https://wa.me/2349061743543?text=Hello%20I%20saw%20your%20portfolio" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/Onlybossfx" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/emmanuel-jonah-6504b0370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> BossFx. All rights reserved.</p>
+            <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
